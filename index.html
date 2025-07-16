@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MovieDrift</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="./assests/bg.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="hamburger" onclick="toggleSidebar()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <button class="btn contact" onclick="parent.location='contact/index.html'">📬 Contact</button>
+
+  <div class="sidebar" id="sidebar">
+    <a href="https://in.bookmyshow.com/">🎟️ Book Tickets</a>
+    <a href="https://www.imdb.com/chart/top/">🌟 IMDB Top Movies</a>
+    <a href="https://editorial.rottentomatoes.com/guide/best-movies-of-all-time/">🍅 Rotten Tomatoes Ranking</a>
+    <a href="https://editorial.rottentomatoes.com/guide/popular-movies/">🔥 Trending Now</a>
+    <a href="https://www.imdb.com/search/title/?groups=oscar_winner">🏆 Award Winners</a>
+  </div>
+
+  <div class="container">
+    <h1>🎬 MovieDrift</h1>
+    <p>Choose your cinematic journey:</p>
+    <div class="buttons">
+      <button class="btn" onclick="parent.location='genre/index.html'">🎞️ View Author's Collection</button>
+      <button class="btn" onclick="parent.location='SearchDatabase/index.html'">🔍 Search the Database</button>
+    </div>
+  </div>
+
+   <footer>
+    🚀 Made by <strong>shivraj</strong> | Powered by <a href="https://www.omdbapi.com/" target="_blank" style="color:#00ffe7;">OMDb API</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

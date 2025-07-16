@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romance</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section>
+    <div class="swiper">
+      <div class="swiper-wrapper"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <div class="modal-container" id="modal">
+    <div class="modal-content">
+      <img class="poster" id="modalPoster" src="" alt="Poster">
+      <h2 id="modalTitle"></h2>
+      <h3 id="modalDescription"></h3>
+      <div class="watchbutton">
+        <a id="modalLink" href="#" target="_blank"><button>WATCH OR DOWNLOAD</button></a>
+        <button class="closebutton" onclick="closeModal()">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="disclaimerPopup" class="disclaimer-popup">
+    <div class="disclaimer-box">
+      <p>I do not own any copyrights for any of the movies shown.</p>
+      <button onclick="closeDisclaimer()">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    🚀 Made by <strong>shivraj</strong> | Powered by 
+    <a href="https://www.omdbapi.com/" target="_blank" style="color:#00ffe7;">OMDb API</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎬 Movie Search App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>🎬 Movie Search</h1>
+
+    <div class="search-container">
+      <input type="text" id="movie-search-box" class="form-control" placeholder="Search for a movie..." onkeyup="findMovies()">
+      <div class="search-list hide-search-list" id="search-list"></div>
+    </div>
+
+    <div class="suggested-section">
+      <h2 class="suggested-title">🔥 Suggested Movies</h2>
+      <div class="suggested-wrapper" id="suggested-list"></div>
+    </div>
+
+    <div class="result-container" id="result-grid"></div>
+  </div>
+ <footer>
+    🚀 Made by <strong>shivraj</strong> | Powered by <a href="https://www.omdbapi.com/" target="_blank" style="color:#00ffe7;">OMDb API</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
